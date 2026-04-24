@@ -11,9 +11,17 @@
 Go to following page to manually install.
 Install the zip file, unzip it, and install virtual cable using the installer inside.
 
+* Go to the page below
+
 ```text
 https://vb-audio.com/Cable/ 
 ```
+
+* Click the right version for your computer
+
+<img width="570" height="595" alt="image" src="https://github.com/user-attachments/assets/17b7a017-b5ee-495a-ad37-919c21558464" />
+
+* After unzip, double click `VBCABLE_Setup_x64.exe` or any other compatible setup installer to your computer.
 
 ## ffmpeg Installation
 
@@ -45,6 +53,8 @@ Make sure you change to virtual microphone.
 
 Now you can double click the exe file `main.exe` from [release](https://github.com/shiuintw/discord-virtual-mic/releases/tag/v1.0) to execute.
 Take it easy if the command line pop up when you executing.
+
+<img width="625" height="411" alt="image" src="https://github.com/user-attachments/assets/4d9e2fbd-4c1b-48f7-bb03-bdc87137d511" />
 
 ---
 
