@@ -35,9 +35,12 @@ sudo apt install ffmpeg
 
 Make sure you change to virtual microphone.
 
+<img width="671" height="382" alt="image" src="https://github.com/user-attachments/assets/57b11007-1506-4f1c-9304-2f934630f4e2" />
+
+
 ## Run The Program
 
-Now you can double the exe file to execute.
+Now you can double the exe file `main.exe` from release to execute.
 
 ---
 
