@@ -40,7 +40,9 @@ Make sure you change to virtual microphone.
 
 ## Run The Program
 
-Now you can double the exe file `main.exe` from [release](https://github.com/shiuintw/discord-virtual-mic/releases/tag/v1.0) to execute.
+>If you feel unconfortable to execute uncheck exe file, I recommand you to build it & review the code yourself.
+
+Now you can double click the exe file `main.exe` from [release](https://github.com/shiuintw/discord-virtual-mic/releases/tag/v1.0) to execute.
 Take it easy if the command line pop up when you executing.
 
 ---
