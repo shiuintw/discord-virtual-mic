@@ -40,7 +40,8 @@ Make sure you change to virtual microphone.
 
 ## Run The Program
 
->If you feel unconfortable to execute uncheck exe file, I recommand you to build it & review the code yourself.
+>If you feel unconfortable to execute unchecked exe file, I recommand you to build it & review the code yourself.
+>The pyinstaller wrap up file may be reported as virus. You can run the program directly by the `Build From Source Code` way to prevent this issue.
 
 Now you can double click the exe file `main.exe` from [release](https://github.com/shiuintw/discord-virtual-mic/releases/tag/v1.0) to execute.
 Take it easy if the command line pop up when you executing.
