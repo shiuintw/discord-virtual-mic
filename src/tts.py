@@ -8,9 +8,9 @@ from pydub import AudioSegment
 class Speech:
     def __init__(self):
         self.device = -1
-        for i, s in enumerate(str(sd.query_devices()).split('\n')):
-            if 'CABLE Input' in s:
-                self.device = i
+        for d in sd.query_devices():
+            if 'CABLE Input' in d['name']:
+                self.device = d['index']
                 break
 
         if self.device == -1:
