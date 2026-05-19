@@ -40,9 +40,13 @@ class TTSApp:
         btn_frame = tk.Frame(root, bg="#1e1e2e")
         btn_frame.pack(pady=5)
 
-        self.speak_btn = ttk.Button(btn_frame, text="Speak",
+        self.speak_btn = ttk.Button(btn_frame, text="Speak(EN)",
                                     command=self.on_speak)
         self.speak_btn.pack(side="left", padx=5)
+
+        self.speak_zh_btn = ttk.Button(btn_frame, text="Speak(ZH-TW)",
+                                       command=self.on_speak_zh)
+        self.speak_zh_btn.pack(side="left", padx=5)
 
         self.repeat_btn = ttk.Button(btn_frame, text="Repeat",
                                      command=self.on_repeat)
@@ -67,6 +71,13 @@ class TTSApp:
         self.pre = text
         self._speak_async(text)
 
+    def on_speak_zh(self):
+        text = self.text_input.get("1.0", tk.END).strip()
+        if not text or self.speaking:
+            return
+        self.pre = text
+        self._speak_async(text, zh=True)
+
     def on_repeat(self):
         if self.pre and not self.speaking:
             self._speak_async(self.pre)
@@ -74,15 +85,20 @@ class TTSApp:
     def on_clear(self):
         self.text_input.delete("1.0", tk.END)
 
-    def _speak_async(self, text):
+    def _speak_async(self, text, zh=False):
         self.speaking = True
         self.status.config(text="Speaking...")
         self.speak_btn.config(state='disabled')
+        self.speak_zh_btn.config(state='disabled')
 
         def run():
-            self.speech.speak(text)
+            if zh:
+                self.speech.speak_tw(text)
+            else:
+                self.speech.speak(text)
             self.speaking = False
             self.status.config(text="Ready")
             self.speak_btn.config(state='normal')
+            self.speak_zh_btn.config(state='normal')
 
         threading.Thread(target=run, daemon=True).start()

@@ -2,3 +2,4 @@ sounddevice
 numpy
 gtts
 pydub
+edge-tts
