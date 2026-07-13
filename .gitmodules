@@ -1,0 +1,3 @@
+[submodule "models/god_tone"]
+	path = models/god_tone
+	url = https://github.com/leo5358/God-Tone-RVC.git

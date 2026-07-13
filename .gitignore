@@ -5,6 +5,7 @@ __pycache__/
 
 # 虛擬環境 (包含你目前的與常見命名)
 .venv/
+.venv-rvc/
 venv/
 env/
 ENV/
